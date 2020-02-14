@@ -42,6 +42,7 @@
         return false;
       });
       socket.on('chat message', function(msg){
+          e.preventDefault();
         $('#messages').append($('<li>').text(msg));
       });
     });
